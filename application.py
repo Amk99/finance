@@ -2,6 +2,7 @@ import os
 
 from cs50 import SQL
 import os
+import psycopg2
 from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
 from tempfile import mkdtemp
@@ -38,7 +39,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Configure CS50 Library to use SQLite database
-db = SQL("postgres://wdlaedvbfgugvd:a8a0391b8dc9403346155b4e8b196a9ba91be0f25949ba7d639d39fdf701e08d@ec2-107-20-167-11.compute-1.amazonaws.com:5432/ddceka8gco0fd7")
+db = SQL("postgres://urzwfisejdrnmf:306f3a1e068345f0022b846845fff365b1e2851569d670489b967fa1d7d6039c@ec2-54-83-55-115.compute-1.amazonaws.com:5432/d5859usmtg6qqu")
 
 
 @app.route("/")
