@@ -5,3 +5,4 @@ requests
 passlib
 SQLAlchemy
 gunicorn
+psycopg2
